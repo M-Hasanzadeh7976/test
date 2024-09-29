@@ -1,0 +1,435 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  scroll-behavior: smooth;
+  font-family: PlayfairDisplay;
+  background-color: var(--background-color) !important;
+  position: relative;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(../fonts/PlayfairDisplay.ttf);
+}
+:root {
+  --background-color: rgb(245, 245, 241);
+  --orange-color: rgb(252, 117, 35);
+  --title-color: rgb(51, 51, 56);
+  --text-color: rgb(136, 132, 125);
+}
+ul,
+li {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+/* Farm To Table */
+.farm-to-table {
+  width: 100%;
+  height: 3000px;
+  position: relative;
+}
+.farm-to-table p {
+  width: 50%;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+  color: var(--text-color);
+  margin-bottom: 60px;
+}
+.farm-to-table p {
+  text-align: justify;
+}
+.farm-to-table button {
+  width: 140px;
+  height: 45px;
+  margin-left: 40px;
+  margin-bottom: 25px;
+  word-spacing: 3px;
+  color: white;
+  background-color: var(--orange-color);
+  border: none;
+  border-radius: 3px;
+}
+.farm-to-table button {
+  width: 170px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.farm-to-table button:hover {
+  cursor: pointer;
+}
+.farm-to-table-inner-section {
+  width: 100%;
+  height: 2000px;
+  display: flex;
+  justify-content: space-between;
+}
+.farm-to-table-left-section {
+  width: 62%;
+}
+.farm-to-table-left-section .food-corner {
+  width: 100%;
+  height: 850px;
+  margin-bottom: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.farm-to-table-left-section .food-corner img {
+  width: 100%;
+}
+.food-corner h3 {
+  font-size: 20px;
+  margin-top: 40px;
+  padding: 0 40px;
+  color: var(--title-color);
+  transition: 0.3s;
+}
+.food-corner p {
+  width: 100%;
+  text-align: justify;
+  padding: 0 40px;
+}
+.food-corner p {
+  margin-top: 30px;
+}
+.imformation {
+  width: 25%;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 40px;
+  font-size: 15px;
+  color: var(--title-color);
+  display: flex;
+}
+.imformation .admin {
+  padding-right: 10px;
+  border-right: 1px solid var(--text-color);
+}
+.imformation .date {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.food-corner:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.food-corner a {
+  width: 85px;
+  font-size: 17px;
+  text-decoration: none;
+  padding-bottom: 5px;
+  margin-left: 40px;
+  color: var(--title-color);
+  border-bottom: 2px solid var(--text-color);
+}
+.farm-to-table-left-section .recipes {
+  width: 100%;
+  height: 1200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.farm-to-table-left-section .recipes .recipe-magzine {
+  width: 47%;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.farm-to-table-left-section .recipes .recipe-magzine .imformation {
+  width: 60%;
+  border: 1px solid black;
+}
+.farm-to-table-left-section .recipes .recipe-magzine .image-box {
+  width: 100%;
+  overflow: hidden;
+}
+.farm-to-table-left-section .recipes .recipe-magzine .image-box img {
+  width: 100%;
+  transition: 1s;
+}
+.farm-to-table-left-section .recipes .recipe-magzine .title {
+  width: 90%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--title-color);
+  margin-top: 20px;
+  border: 1px solid black;
+}
+.farm-to-table-left-section .recipes .recipe-magzine .image-box img:hover {
+  transform: scale(1.1);
+}
+.farm-to-table-right-section {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.farm-to-table-right-section .lastest-recipes {
+  width: 100%;
+  height: 480px;
+  margin-bottom: 50px;
+  background: url(../images/lastest-recipes.jpg) no-repeat center;
+  background-size: cover;
+}
+.farm-to-table-right-section .city-guide {
+  width: 100%;
+  position: relative;
+}
+.farm-to-table-right-section .city-guide .city-guide-singapore {
+  width: 100%;
+  height: 250px;
+  background: url(../images/city-guide.jpg) no-repeat center;
+  background-size: cover;
+}
+.farm-to-table-right-section .city-guide p {
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--orange-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.farm-to-table-right-section .city-guide p img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.farm-to-table-right-section .city-guide::before {
+  content: "City Guide Singapore";
+  width: 330px;
+  height: 60px;
+  font-size: 27px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.815);
+  position: absolute;
+  top: 40%;
+}
+.farm-to-table-right-section .search-box {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.925);
+  border-radius: 3px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.farm-to-table-right-section .search-box img {
+  width: 20px;
+  height: 20px;
+}
+.farm-to-table-right-section .search-box input {
+  width: 90%;
+  height: 30px;
+  font-size: 15px;
+  border: none;
+}
+
+.farm-to-table-right-section .search-box input:focus {
+  outline: 0;
+}
+.farm-to-table-right-section .search-box img:hover {
+  cursor: pointer;
+}
+.farm-to-table-right-section .contact-us,
+.about-us .logo-and-social-media .social-media {
+  width: 100%;
+  height: 40px;
+  margin: 40px 0;
+  display: flex;
+}
+.farm-to-table-right-section .contact-us .social-media img,
+.about-us .logo-and-social-media .social-media .social-media-icon img {
+  width: 33px;
+  height: 33px;
+  background-color: white;
+  padding: 8px;
+  margin-right: 10px;
+}
+.farm-to-table-right-section .contact-us .social-media,
+.about-us .logo-and-social-media .social-media .social-media-icon {
+  position: relative;
+}
+.farm-to-table-right-section .contact-us .social-media p,
+.about-us .logo-and-social-media .social-media .social-media-icon p {
+  width: 65px;
+  height: 22px;
+  font-size: 10px;
+  color: white;
+  background-color: #333;
+  border-radius: 3px;
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -25%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.farm-to-table-right-section .contact-us .social-media p::before,
+.about-us .logo-and-social-media .social-media .social-media-icon p::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom-color: #333;
+  position: absolute;
+  top: -55%;
+  left: 50%;
+  transform: translatex(-50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+.farm-to-table-right-section .contact-us .social-media:hover,
+.about-us .logo-and-social-media .social-media .social-media-icon {
+  cursor: pointer;
+}
+.farm-to-table-right-section .contact-us .facebook:hover p,
+.farm-to-table-right-section .contact-us .facebook:hover p::before,
+.about-us .logo-and-social-media .social-media .facebook:hover p,
+.about-us .logo-and-social-media .social-media .facebook:hover p::before {
+  opacity: 1;
+}
+.farm-to-table-right-section .contact-us .instagram:hover p,
+.farm-to-table-right-section .contact-us .instagram:hover p::before,
+.about-us .logo-and-social-media .social-media .instagram:hover p,
+.about-us .logo-and-social-media .social-media .instagram:hover p::before {
+  opacity: 1;
+}
+.farm-to-table-right-section .contact-us .twitter:hover p,
+.farm-to-table-right-section .contact-us .twitter:hover p::before,
+.about-us .logo-and-social-media .social-media .twitter:hover p,
+.about-us .logo-and-social-media .social-media .twitter:hover p::before {
+  opacity: 1;
+}
+.farm-to-table-right-section .contact-us .youtube:hover p,
+.farm-to-table-right-section .contact-us .youtube:hover p::before,
+.about-us .logo-and-social-media .social-media .youtube:hover p,
+.about-us .logo-and-social-media .social-media .youtube:hover p::before {
+  opacity: 1;
+}
+.farm-to-table-right-section .blogs {
+  width: 100%;
+  height: 450px;
+  border: 1px solid black;
+}
+.farm-to-table-right-section .blogs .blog-categories {
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--text-color);
+  display: flex;
+}
+.farm-to-table-right-section .blogs .blog-categories .blog-category {
+  width: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--title-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.farm-to-table-right-section
+  .blogs
+  .blog-categories
+  .blog-category:first-child {
+  border-right: 1px solid var(--text-color);
+}
+.farm-to-table-right-section .blogs .blog-categories .blog-category:hover {
+  cursor: pointer;
+}
+.farm-to-table-right-section .blogs .blog-samples {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.farm-to-table-right-section .blogs .blog-samples .blog {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.farm-to-table-right-section .blogs .blog-samples .blog .blog-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: no-repeat center;
+  background-size: cover;
+}
+.farm-to-table-right-section .blogs .blog-samples .blog .blog-photo1 {
+  background-image: url(../images/blog1.jpg);
+}
+.farm-to-table-right-section .blogs .blog-samples .blog .blog-photo2 {
+  background-image: url(../images/blog2.jpg);
+}
+.farm-to-table-right-section .blogs .blog-samples .blog .blog-photo3 {
+  background-image: url(../images/blog3.jpg);
+}
+.farm-to-table-right-section .blogs .blog-samples .blog .blog-imformation {
+  width: 80%;
+  height: 80px;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.farm-to-table-right-section
+  .blogs
+  .blog-samples
+  .blog
+  .blog-imformation
+  .blog-name {
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  line-height: 25px;
+  color: var(--title-color);
+  /* background-color: green; */
+}
+.farm-to-table-right-section
+  .blogs
+  .blog-samples
+  .blog
+  .blog-imformation
+  .blog-date {
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+  color: var(--text-color);
+}
